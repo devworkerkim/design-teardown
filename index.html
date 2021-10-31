@@ -4,12 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap" rel="stylesheet">
     <title>Design Teardown | The Odin Project</title>
     <style>
-        
+        nav {
+            width: 100%;
+            height: 103px;
+            background-color: lightgray;
+        }
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            list-style: none;
+        }
+        li {
+            font-family: 'Mali', cursive;
+            font-weight: 700;
+        }
+        main {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+        }
+        article h1 {
+            height: 284px;
+            color: white;
+            font-family: 'Mali', cursive;
+            font-weight: 700;
+            background-color: black;
+        }
+        p {
+            font-family: 'Zen Antique Soft', serif;
+        }
+        aside {
+            display: flex;
+            flex-direction: column;
+        }
+        aside img{
+            height: 250px;
+            width: 250px;
+            background-color: grey;
+        }
+        aside h1 {
+            font-family:'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
-    
+    <nav>
+        <ul>
+            <li>Articles</li>
+            <li>Guides</li>
+            <li>Books</li>
+            <li>Workshops</li>
+            <li>Membership</li>
+            <li><button>More</button></li>
+            <li><input type="search"></li>
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <h1>A Splash Of Color For Misty Days (November 2021 Desktop Wallpapers Edition)</h1>
+            <p>November is just around the corner, and with it, a new collection of desktop wallpapers to celebrate the beginning of the month. Designed by creatives from all across the globe, they come in versions with and without a calendar. Let’s make November colorful!</p>
+        </article>
+        <aside>
+            <img>
+            <button>Email Newsletter</button>
+            <h1>Useful front-end & UX tips, delivered once a week.</h1>
+            <p>With tools to help you get your work done better. Subscribe and get Vitaly’s <a href="">Smart Interface Design Checklists PDF</a> — in your inbox. 🎁</p>
+            <form action="">
+                <input type="email">
+                <button>Meow!</button>
+            </form>
+        </aside>
+    </main>
 </body>
 </html>
